@@ -1,4 +1,5 @@
-## I. Settings
+## I. Settings (주 관리자)
+- 다음은 Main 관리자가 해야 하는 영역이다. 
 - 우선 드라이브와 구글 코랩을 마운트할 수 있도록 다음 코드를 순서대로 실행한다.
 
 ```terminal
@@ -62,7 +63,7 @@ remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
 Unpacking objects: 100% (3/3), done.
 ```
 
-- 파일 작성이 다 끝나면 아래와 같이 코드를 입력한다.
+- 각각의 파일 작성이 다 끝나면 아래와 같이 코드를 입력한다.
 
 ```terminal
 # Clone github repository setup
@@ -101,3 +102,13 @@ print("GIT_PATH: ", GIT_PATH)
 PROJECT_PATH:  /content/drive/My Drive/Colab Notebooks/
 GIT_PATH:  https://99a6e6cee0faacc6c2b360ba50378a6e5e067fbd@github.com/hkit301/kaggle.git
 ```
+
+- 이제 아래 코드를 순차적으로 입력한 후 `git push`를 진행한다.
+
+```terminal
+!git remote set-url origin "{GIT_PATH}"
+!git add *
+!git commit -m "commit"
+!git push
+```
+
