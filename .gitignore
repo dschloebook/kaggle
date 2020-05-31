@@ -1,0 +1,7 @@
+# exclude data files
+*.json
+*.csv
+
+# ignore package folder
+python_external_packages/
+
